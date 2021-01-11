@@ -531,7 +531,7 @@ a {
 }
 
 #buy-now-img1, #buy-now-img2 {
-    background-image: url("../images/final8.png");
+    background-image: url("../images/final8.jpg");
 }
 
 #buy-now-img1 {
@@ -602,7 +602,7 @@ a {
 
 #newsletter-img {
     grid-area: newsletter-img;
-    background-image: url("../images/Modelka\ se\ sluchátky\ FlyPods4.jpg");
+    background-image: url("../images/final4.jpg");
     filter: blur(5px);
     width: 375px;
     height: auto;
