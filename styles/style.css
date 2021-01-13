@@ -14,18 +14,31 @@ body {
 
 /* Sections */
 
-.home, .fly-pods1, .fly-pods2, .fly-pods3, .fly-pods4, .follow-us, .buy-now, footer {
+.home,
+.fly-pods1,
+.fly-pods2,
+.fly-pods3,
+.fly-pods4,
+.follow-us,
+.buy-now,
+footer {
     height: 100vh;
 }
 
-.fly-pods1, .fly-pods2, .fly-pods3, .fly-pods4, .follow-us, .buy-now, footer {
+.fly-pods1,
+.fly-pods2,
+.fly-pods3,
+.fly-pods4,
+.follow-us,
+.buy-now,
+footer {
     display: grid;
     max-width: 480px;
 }
 
 .fly-pods1 {
     grid-template-areas: "menu"
-                         "none flypods1-grid-con";
+        "none flypods1-grid-con";
     grid-template-columns: 60px auto;
     grid-template-rows: 80px 1fr 80px;
     justify-content: start;
@@ -33,58 +46,58 @@ body {
 
 .fly-pods2 {
     grid-template-areas: "menu"
-                         "none flypods2-img"
-                         "none flypods2-text";
+        "none flypods2-img"
+        "none flypods2-text";
     grid-template-columns: 60px auto;
     grid-template-rows: 80px 1fr 2fr;
 }
 
 .fly-pods3 {
     grid-template-areas: "menu"
-                         "none flypods3-h2"
-                         "none flypods3-img"
-                         "none flypods3-text";
+        "none flypods3-h2"
+        "none flypods3-img"
+        "none flypods3-text";
     grid-template-columns: 60px auto;
-    grid-template-rows: 80px 105px 215px 2fr;
+    grid-template-rows: 80px 105px 1fr 2fr;
 }
 
 .fly-pods4 {
     grid-template-areas: "menu"
-                         "none flypods4-img"
-                         "none flypods4-h2-group"
-                         "none flypods3-text";
+        "none flypods4-img"
+        "none flypods4-h2-group"
+        "none flypods3-text";
     grid-template-columns: 60px auto;
-    grid-template-rows: 80px 240px 80px 2fr;
+    grid-template-rows: 80px 1fr 80px 2fr;
 }
 
 .follow-us {
     grid-template-areas: "menu"
-                         "none socialmedia"
-                         "none follow-us-h2";
+        "none socialmedia"
+        "none follow-us-h2";
     grid-template-columns: 50px auto;
     grid-template-rows: 80px 2fr 1fr;
 }
 
 .buy-now {
     grid-template-areas: "menu"
-                         "none buy-now-img1"
-                         "none buy-now-img2 buy-now-h2"
-                         "none buy-now-img3";
+        "none buy-now-img1"
+        "none buy-now-img2 buy-now-h2"
+        "none buy-now-img3";
     grid-template-columns: 60px 1fr 1fr;
     grid-template-rows: 80px 1.25fr 50px 2fr;
     row-gap: 15px;
 }
 
 footer {
-    grid-template-areas: "newsletter-up-side" 
-                         "newsletter-img";
+    grid-template-areas: "newsletter-up-side"
+        "newsletter-img";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
     background-color: black;
     color: white;
 }
 
-/* Nav & lists*/ 
+/* Nav & lists*/
 
 .header-ul {
     display: flex;
@@ -103,13 +116,16 @@ footer {
 
 /* Headers */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: operetta-12, serif;
     font-style: normal;
     color: black;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-size: 50px;
     letter-spacing: 4.5px;
     font-weight: 300;
@@ -141,13 +157,14 @@ h2 {
     text-align: right;
 }
 
-#flypods4-h2-group h2:nth-of-type(1), #flypods4-h2-group h2:nth-of-type(2) {
+#flypods4-h2-group h2:nth-of-type(1),
+#flypods4-h2-group h2:nth-of-type(2) {
     text-align: center;
 }
 
 #flypods4-h2-group h2:nth-of-type(2) {
     position: absolute;
-    top: 3Px;
+    top: 3px;
 }
 
 /* Paragraphs */
@@ -174,7 +191,8 @@ p {
     top: -5px;
 }
 
-.third, .fourth {
+.third,
+.fourth {
     transform: rotate(180deg);
     transform-origin: 53% 7%;
 }
@@ -198,7 +216,8 @@ p {
     top: 5px;
 }
 
-.news-letter-text p:nth-of-type(1), .news-letter-text p:nth-of-type(2){
+.news-letter-text p:nth-of-type(1),
+.news-letter-text p:nth-of-type(2) {
     font-size: 25px;
     line-height: 40px;
 }
@@ -217,12 +236,10 @@ p {
     margin-right: 5px;
 }
 
-.fly-pods2-img {
-    width: 330px;
-}
-
-.fly-pods3-img, .fly-pods4-img {
-    width: 310px;
+.fly-pods2-img,
+.fly-pods3-img,
+.fly-pods4-img {
+    width: 100%;
 }
 
 /* Text */
@@ -257,9 +274,14 @@ a {
 .fly-pods1-grid-container {
     display: grid;
     max-width: 100vw;
-    grid-template-columns: 60px 157.5px 157.5px;
-    grid-template-rows: repeat(5, 116px);
+    grid-template-columns: 60px repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     justify-items: start;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: end;
     grid-template-areas:
         "none first second"
         "none third fourth"
@@ -288,24 +310,27 @@ a {
 
 /* Grid ID */
 
-#flypods1-grid-con {
-    grid-area: flypods1-grid-con;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    justify-self: end;
-}
 
-#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eight {
+#first,
+#second,
+#third,
+#fourth,
+#fifth,
+#sixth,
+#seventh,
+#eight {
     background-image: url("../images/final3.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     align-self: center;
+    ;
 }
 
-#first, #third, #fifth, #seventh {
+#first,
+#third,
+#fifth,
+#seventh {
     transform: rotate(90deg);
     background-position: right top;
     width: 116px;
@@ -314,7 +339,10 @@ a {
 }
 
 
-#second, #fourth, #sixth, #eight {
+#second,
+#fourth,
+#sixth,
+#eight {
     width: 157.5px;
     height: 116px;
 }
@@ -325,6 +353,7 @@ a {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+
 }
 
 #second {
@@ -508,7 +537,7 @@ a {
     transform: rotate(180deg);
     transform-origin: 46% 27.75%;
 }
-                                                      
+
 #follow-us-h2 h2:nth-of-type(3) {
     transform: rotate(180deg);
     transform-origin: 45% 41.75%;
@@ -531,7 +560,8 @@ a {
     font-weight: 200;
 }
 
-#buy-now-img1, #buy-now-img2 {
+#buy-now-img1,
+#buy-now-img2 {
     background-image: url("../images/final8.jpg");
 }
 
@@ -605,7 +635,7 @@ a {
     grid-area: newsletter-img;
     background-image: url("../images/final4.jpg");
     filter: blur(5px);
-    width: 375px;
+    width: 100%;
     height: auto;
     background-repeat: no-repeat;
     background-position: center center;
