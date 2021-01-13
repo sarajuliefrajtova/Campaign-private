@@ -26,15 +26,16 @@ body {
 .fly-pods1 {
     grid-template-areas: "menu"
                          "none flypods1-grid-con";
-    grid-template-columns: 60px 315px;
+    grid-template-columns: 60px auto;
     grid-template-rows: 80px 1fr 80px;
+    justify-content: start;
 }
 
 .fly-pods2 {
     grid-template-areas: "menu"
                          "none flypods2-img"
                          "none flypods2-text";
-    grid-template-columns: 60px 310px;
+    grid-template-columns: 60px auto;
     grid-template-rows: 80px 1fr 2fr;
 }
 
@@ -43,7 +44,7 @@ body {
                          "none flypods3-h2"
                          "none flypods3-img"
                          "none flypods3-text";
-    grid-template-columns: 60px 310px;
+    grid-template-columns: 60px auto;
     grid-template-rows: 80px 105px 215px 2fr;
 }
 
@@ -52,7 +53,7 @@ body {
                          "none flypods4-img"
                          "none flypods4-h2-group"
                          "none flypods3-text";
-    grid-template-columns: 60px 310px;
+    grid-template-columns: 60px auto;
     grid-template-rows: 80px 240px 80px 2fr;
 }
 
@@ -60,7 +61,7 @@ body {
     grid-template-areas: "menu"
                          "none socialmedia"
                          "none follow-us-h2";
-    grid-template-columns: 50px 310px;
+    grid-template-columns: 50px auto;
     grid-template-rows: 80px 2fr 1fr;
 }
 
@@ -69,7 +70,7 @@ body {
                          "none buy-now-img1"
                          "none buy-now-img2 buy-now-h2"
                          "none buy-now-img3";
-    grid-template-columns: 60px 155px 155px;
+    grid-template-columns: 60px 1fr 1fr;
     grid-template-rows: 80px 1.25fr 50px 2fr;
     row-gap: 15px;
 }
@@ -289,7 +290,7 @@ a {
 
 #flypods1-grid-con {
     grid-area: flypods1-grid-con;
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
