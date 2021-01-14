@@ -184,6 +184,23 @@ footer {
         transform-origin: 44% 51.5%;
     }
 
+    .nav-items li a::after {
+        display: block;
+        opacity: 0;
+        transition: all 1s;
+        height: .8px;
+        background-color: rgba(0, 0, 0, 0.753);
+        content: " ";
+        width: 0;
+        margin: 0;
+        margin-top: 7px;
+    }
+
+    .nav-items li:hover a::after {
+        width: 35px;
+        opacity: 1;
+    }
+
 }
 
 @media only screen and (min-width: 961px) and (max-width: 1200px) {
