@@ -42,6 +42,10 @@ footer {
     display: none
 }
 
+.fly-pods2-text {
+    text-align: right;
+    padding: 0 30px;
+}
 
 .fly-pods3 {
     grid-template-rows: 80px 98px 1fr 1.5fr;

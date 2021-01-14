@@ -1,5 +1,13 @@
 /* Basics */
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 html>* {
     margin: 0;
     padding: 0;
@@ -140,7 +148,7 @@ h2 {
     min-height: 150px;
     padding: 15px;
     display: inline-block;
-    position: sticky;
+    position: fixed;
     bottom: 50%;
     left: 0;
     margin-left: 0;
@@ -263,12 +271,15 @@ a {
     flex-direction: column;
     height: 75vh;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .flex-header-p {
     position: relative;
     right: 4.5%;
     top: 2%;
+    overflow: hidden;
+    width: 20rem;
 }
 
 .fly-pods1-grid-container {
