@@ -37,52 +37,52 @@ footer {
 }
 
 .fly-pods1 {
-    grid-template-areas: "menu"
-        "none flypods1-grid-con";
-    grid-template-columns: 60px auto;
+    grid-template-areas:
+        "flypods1-grid-container";
+    grid-template-columns: 100%;
     grid-template-rows: 80px 1fr 80px;
     justify-content: start;
 }
 
 .fly-pods2 {
-    grid-template-areas: "menu"
-        "none flypods2-img"
-        "none flypods2-text";
+    grid-template-areas: 
+        "flypods2-img"
+        "flypods2-text";
     grid-template-columns: 60px auto;
-    grid-template-rows: 80px 1fr 2fr;
+    grid-template-rows: 80px 1fr 1.5fr;
 }
 
 .fly-pods3 {
-    grid-template-areas: "menu"
-        "none flypods3-h2"
-        "none flypods3-img"
-        "none flypods3-text";
+    grid-template-areas: 
+        "flypods3-h2"
+        "flypods3-img"
+        "flypods3-text";
     grid-template-columns: 60px auto;
-    grid-template-rows: 80px 105px 1fr 2fr;
+    grid-template-rows: 80px 120px 1fr 1.5fr;
 }
 
 .fly-pods4 {
-    grid-template-areas: "menu"
-        "none flypods4-img"
-        "none flypods4-h2-group"
-        "none flypods3-text";
+    grid-template-areas: 
+        "flypods4-img"
+        "flypods4-h2-group"
+        "flypods3-text";
     grid-template-columns: 60px auto;
-    grid-template-rows: 80px 1fr 80px 2fr;
+    grid-template-rows: 80px 1fr 80px 1.5fr;
 }
 
 .follow-us {
-    grid-template-areas: "menu"
-        "none socialmedia"
-        "none follow-us-h2";
+    grid-template-areas:
+        "socialmedia"
+        "follow-us-h2";
     grid-template-columns: 50px auto;
     grid-template-rows: 80px 2fr 1fr;
 }
 
 .buy-now {
-    grid-template-areas: "menu"
-        "none buy-now-img1"
-        "none buy-now-img2 buy-now-h2"
-        "none buy-now-img3";
+    grid-template-areas:
+        "buy-now-img1"
+        "buy-now-img2 buy-now-h2"
+        "buy-now-img3";
     grid-template-columns: 60px 1fr 1fr;
     grid-template-rows: 80px 1.25fr 50px 2fr;
     row-gap: 15px;
@@ -273,8 +273,8 @@ a {
 
 .fly-pods1-grid-container {
     display: grid;
-    max-width: 100vw;
-    grid-template-columns: 60px repeat(2, 1fr);
+    width: 100%;
+    grid-template-columns: .5fr repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     justify-items: start;
     grid-column-start: 1;
@@ -283,11 +283,11 @@ a {
     grid-row-end: 3;
     justify-self: end;
     grid-template-areas:
-        "none first second"
-        "none third fourth"
-        "none fifth sixth"
-        "none seventh eight"
-        "none ninth";
+        "first second"
+        "third fourth"
+        "fifth sixth"
+        "seventh eight"
+        "ninth";
 }
 
 .newsletter-email-container input {
@@ -310,41 +310,36 @@ a {
 
 /* Grid ID */
 
-
-#first,
-#second,
-#third,
-#fourth,
-#fifth,
-#sixth,
-#seventh,
-#eight {
+.first-img,
+.second-img,
+.third-img,
+.fourth-img,
+.fifth-img,
+.sixth-img,
+.seventh-img,
+.eight-img {
     background-image: url("../images/final3.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     align-self: center;
+    width: 100%;
+    height: 100%;
 }
 
-#first,
-#third,
-#fifth,
-#seventh {
-    transform: rotate(90deg);
+.first-img,
+.third-img,
+.fifth-img,
+.seventh-img {
     background-position: right top;
-    width: 116px;
-    height: 157.5px;
     justify-self: center;
 }
 
-
-#second,
-#fourth,
-#sixth,
-#eight {
-    width: 157.5px;
-    height: 116px;
+#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eight {
+    width: 100%;
+    height: 100%;
 }
+
 
 #first {
     grid-area: first;
@@ -352,7 +347,6 @@ a {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-
 }
 
 #second {
@@ -431,6 +425,7 @@ a {
     grid-row-start: 2;
     grid-row-end: 3;
     justify-self: center;
+    align-self: center;
 }
 
 #flypods2-text {
@@ -442,6 +437,7 @@ a {
     justify-self: center;
     text-align: justify;
     padding: 0 10px;
+    margin: 0;
 }
 
 #flypods3-h2 {
@@ -463,6 +459,7 @@ a {
     grid-row-start: 3;
     grid-row-end: 4;
     justify-self: center;
+    align-self: center;
 }
 
 #flypods3-text {
