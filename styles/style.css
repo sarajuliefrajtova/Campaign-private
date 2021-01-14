@@ -306,6 +306,13 @@ a {
     border: 1px solid black;
     color: black;
     font-weight: 200;
+    transition: all 1s ease 0s;
+}
+
+.newsletter-button input:hover {
+    background: black 0% 0% no-repeat padding-box;
+    border: 1px solid white;
+    color: white;
 }
 
 /* Grid ID */
