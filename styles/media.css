@@ -1,4 +1,4 @@
-@media only screen and (min-width: 480px) and (max-width: 760px) {
+@media only screen and (min-width: 481px) and (max-width: 1200px) {
 
 .fly-pods1,
 .fly-pods2,
@@ -7,11 +7,25 @@
 .follow-us,
 .buy-now,
 footer {
-    max-width: 760px;
+    max-width: 100%;
+}
+
+.header-img {
+    width: 31rem;
+    height: 23rem;
+    margin: 82px 5px 0 0;
+}
+
+.vertical-text-wrapper {
+    min-height: 13rem;
+}
+
+.vertical-text-wrapper h1 {
+    font-size: 70px;
 }
 
 .fly-pods1-grid-container {
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr) 1fr;
     grid-template-areas:
         "first second"
         "third fourth"
@@ -39,28 +53,227 @@ footer {
 }
 
 #eight {
-    display: none
+    display: none;
 }
 
-.fly-pods2-text {
+#ninth {
+    grid-row-start: 4;
+}
+
+.gravity-free-motion p {
+    font-size: 23px;
+}
+
+#flypods2-img {
+    width: 80%;
+}
+
+#flypods2-text {
     text-align: right;
-    padding: 0 30px;
+    padding: 0 92px;
 }
 
 .fly-pods3 {
-    grid-template-rows: 80px 98px 1fr 1.5fr;
+    grid-template-rows: 70px 1.9fr 1fr 1.5fr;
 }
+
+#flypods3-h2 {
+    font-size: 1.6rem;
+    line-height: 38px;
+    padding-right: 4rem;
+} 
 
 #flypods3-text {
     align-self: center;
+    padding: 0 64px;
+}
+
+#flypods3-img {
+    width: 80%;
+    height: auto;
+}
+
+#flypods4-img {
+    width: 80%;
+    height: auto;
+}
+
+#flypods4-h2-group {
+    width: 29rem;
+    margin: 0 auto;
+    align-self: end;
+}
+
+#flypods4-text {
+    padding: 26px 61px;
+}
+
+#socialmedia {
+    width: 27rem;
+    height: 31rem;
+}
+
+#newsletter-text {
+    width: 30rem;
+    margin: 0 auto
+}
+
+.news-letter-text p:nth-of-type(1), .news-letter-text p:nth-of-type(2) {
+    font-size: 30px;
+    line-height: 47px;
+}
+
+.news-letter-text p:nth-of-type(2) {
+    position: absolute;
+    top: -24px;
+    font-weight: 300;
+}
+
+.extra-light-h2 {
+    font-size: 30px;
+}
+
+#follow-us-h2 h2:nth-of-type(2) {
+    transform-origin: 45% 38.5%;
+}
+
+#follow-us-h2 h2:nth-of-type(3) {
+    transform-origin: 45% 51.5%;
 }
 
 }
 
-@media only screen and (min-width: 760px) and (max-width: 960px) {
+
+@media only screen and (min-width: 761px) and (max-width: 1200px) {
+
+    .header-img {
+        width: 35rem;
+        height: 25rem;
+        margin: 65px 5px 0 0;
+    }
+
+    .fly-pods1-grid-container {
+        grid-template-rows: repeat(3, 5.2fr) 1.2fr;
+    }
+
+    #ninth {
+        align-self: end;
+    }
+
+    .header-ul {
+        justify-content: space-around;
+        align-items: baseline;
+        padding: 24px 15px;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: space-around;
+        width: 35rem;
+    }
+
+    #follow-us-h2 {
+        padding-right: 3rem;
+    }
+
+    #follow-us-h2 h2:nth-of-type(2) {
+        transform-origin: 42% 38.5%;
+    }
+
+    #follow-us-h2 h2:nth-of-type(3) {
+        transform-origin: 44% 51.5%;
+    }
 
 }
 
-@media only screen and (min-width: 960px) and (max-width: 1200px) {
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+    
+    .vertical-text-wrapper {
+        min-height: 17rem;
+    }
+
+    .vertical-text-wrapper h1 {
+        font-size: 90px;
+    }
+
+    .header-img {
+        width: 52rem;
+        height: 36rem;
+        margin: 40px 5px 0 0;
+    }
+
+    .flex-header-p {
+        width: 26rem;
+    }
+
+    .header-p {
+        font-size: 27px;
+    }
+
+    .gravity-free-motion p {
+        font-size: 32px;
+    }
+
+    #flypods2-text {
+        width: 41rem;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    #flypods3-h2 {
+        font-size: 2.6rem;
+        line-height: 50px;
+        padding-right: 6rem;
+    }
+
+    #flypods3-text {
+        padding: 0px 87px;
+        width: 48rem;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    #flypods4-h2-group h2:nth-of-type(1), #flypods4-h2-group h2:nth-of-type(2) {
+        font-size: 23px;
+    }
+
+    #flypods4-text {
+        padding: 26px 61px;
+        align-self: center;
+        padding: 0px 87px;
+        width: 48rem;
+        font-size: 20px;
+        line-height: 32px;
+    }
+   
+    #socialmedia {
+        width: 26rem;
+        height: 30rem;
+    }
+
+    #follow-us-h2 {
+        margin-right: 4rem;
+    }
+
+    .extra-light-h2 {
+        font-size: 30px;
+    }
+
+    #follow-us-h2 h2:nth-of-type(2) {
+        transform-origin: 46% 37.5%;
+    }
+
+    #follow-us-h2 h2:nth-of-type(3) {
+        transform-origin: 45% 53.5%;
+    }
+
+    .news-letter-text p:nth-of-type(2) {
+        top: -28px;
+    }
+
+    .news-letter-text p:nth-of-type(1), .news-letter-text p:nth-of-type(2) {
+        line-height: 57px;
+    }
+
 
 }

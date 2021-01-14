@@ -75,7 +75,7 @@ footer {
         "flypods4-h2-group"
         "flypods3-text";
     grid-template-columns: 60px auto;
-    grid-template-rows: 80px 1fr 80px 1.5fr;
+    grid-template-rows: 80px 1fr 100px 1.5fr;
 }
 
 .follow-us {
@@ -88,11 +88,11 @@ footer {
 
 .buy-now {
     grid-template-areas:
-        "buy-now-img1"
-        "buy-now-img2 buy-now-h2"
-        "buy-now-img3";
-    grid-template-columns: 60px 1fr 1fr;
-    grid-template-rows: 80px 1.25fr 50px 2fr;
+        "buy-now1"
+        "buy-now2 buy-now-h2"
+        "buy-now3";
+    grid-template-columns: 60px 3.3fr 1fr;
+    grid-template-rows: 80px 1fr 50px 2fr;
     row-gap: 15px;
 }
 
@@ -161,13 +161,15 @@ h2 {
     font-size: 23px;
 }
 
-#flypods3-h2 h2 {
+#flypods3-h2 {
     text-align: right;
+    padding-right: 1rem;
 }
 
 #flypods4-h2-group h2:nth-of-type(1),
 #flypods4-h2-group h2:nth-of-type(2) {
     text-align: center;
+    font-size: 16px;
 }
 
 #flypods4-h2-group h2:nth-of-type(2) {
@@ -202,12 +204,12 @@ p {
 .third,
 .fourth {
     transform: rotate(180deg);
-    transform-origin: 53% 7%;
+    transform-origin: 51% 18%;
 }
 
 .fourth {
     position: absolute;
-    top: 74px;
+    top: 66px;
 }
 
 .gravity-free-motion {
@@ -247,7 +249,7 @@ p {
 .fly-pods2-img,
 .fly-pods3-img,
 .fly-pods4-img {
-    width: 100%;
+    width: 95%;
 }
 
 /* Text */
@@ -286,7 +288,7 @@ a {
     display: grid;
     width: 100%;
     grid-template-columns: .5fr repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr) 1fr;
     justify-items: start;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -434,6 +436,7 @@ a {
     grid-row-start: 5;
     grid-row-end: 6;
     justify-self: center;
+    align-self: center;
 }
 
 #flypods2-img {
@@ -465,9 +468,11 @@ a {
     grid-row-start: 2;
     grid-row-end: 3;
     justify-self: end;
-    width: 66%;
     line-height: 30px;
-    align-self: end;
+    align-self: center;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 200;
 }
 
 #flypods3-img {
@@ -488,6 +493,7 @@ a {
     grid-row-end: 5;
     text-align: justify;
     padding: 0 10px;
+    align-self: center;
 }
 
 #flypods4-img {
@@ -506,6 +512,7 @@ a {
     grid-row-start: 3;
     grid-row-end: 4;
     position: relative;
+    align-self: center;
 }
 
 #flypods4-text {
@@ -516,13 +523,14 @@ a {
     grid-row-end: 5;
     text-align: justify;
     padding: 0 10px;
+    align-self: center;
 }
 
 #socialmedia {
     grid-area: socialmedia;
     background-image: url("../images/social_media_mobile.png");
-    width: 303px;
-    height: 350px;
+    width: 20rem;
+    height: 23rem;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -531,7 +539,7 @@ a {
     grid-row-start: 2;
     grid-row-end: 3;
     align-self: center;
-    justify-self: end;
+    justify-self: center;
 }
 
 #follow-us-h2 {
@@ -542,21 +550,21 @@ a {
     grid-row-end: 4;
     text-align: right;
     justify-self: end;
-    width: 60%;
-    height: 210px;
+    width: 14rem;
     position: relative;
 }
 
 #follow-us-h2 h2:nth-of-type(2) {
     transform: rotate(180deg);
-    transform-origin: 46% 27.75%;
+    transform-origin: 52% 37.5%;
 }
 
 #follow-us-h2 h2:nth-of-type(3) {
     transform: rotate(180deg);
-    transform-origin: 45% 41.75%;
+    transform-origin: 53% 40.5%;
     position: absolute;
     top: 98px;
+    width: 12rem;
 }
 
 #buy-now-h2 {
@@ -574,37 +582,64 @@ a {
     font-weight: 200;
 }
 
-#buy-now-img1,
-#buy-now-img2 {
-    background-image: url("../images/final8.jpg");
-}
-
-#buy-now-img1 {
-    grid-area: buy-now-img1;
-    width: 290px;
-    height: 180px;
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+#buy-now1 {
+    grid-area: buy-now1;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
+    grid-row-end: 3;
     align-self: start;
+    width: 100%;
+    height: 100%;
 }
 
-#buy-now-img2 {
-    grid-area: buy-now-img2;
-    width: 290px;
-    height: 180px;
-    transform: rotate(90deg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+#buy-now2 {
+    grid-area: buy-now2;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row: 3 / span 2;
     align-self: start;
+}
+
+#buy-now3 {
+    grid-area: buy-now3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 3 / span 2;
+    align-self: start;
+}
+
+.buy-now-img1,
+.buy-now-img2,
+.buy-now-img3 {
+    background-image: url("../images/final8.jpg");
+}
+
+.buy-now-img1 {
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-now-img2 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.buy-now-img3 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 #newsletter-up-side {
